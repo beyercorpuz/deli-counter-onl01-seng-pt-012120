@@ -16,6 +16,7 @@ end
       puts " The next person in line is #{name}"
     end
       name.shift
-      if #{name} < 1 puts " There is nobody waiting to be served!"
-  
+      if #{name} < 1 
+      puts " There is nobody waiting to be served!"
+  end
   
