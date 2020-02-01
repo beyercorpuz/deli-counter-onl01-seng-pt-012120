@@ -2,15 +2,16 @@
 def line(place)
 if  place >= 1 
  puts  "Your place in line is #{place}"
-end
-end
-if place < 1 
+ if place < 1 
   puts " The line is currently empty"
+end
+end
+
 end
   def take_a_number(deli,name)
     puts "The name of the person is #{name}"
   end
-    puts "Their place in line is {place}"
+    puts "Their place in line is #{place}"
   
     def now_servicing(name)
       puts " The next person in line is #{name}"
