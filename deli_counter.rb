@@ -6,7 +6,7 @@ def line(deli_line)
      counter = 0
      phrase = "The line is currently: "
       while counter < deli_line.length
-      phrase += "#{counter +1}. #{deli_line[0]}"
+      phrase += "#{counter +1}. #{deli_line[0]} "
       counter += 1
       end
     puts phrase
