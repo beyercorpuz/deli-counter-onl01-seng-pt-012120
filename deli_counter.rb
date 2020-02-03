@@ -27,6 +27,8 @@ end
  
 def now_serving(katz_deli) 
 	item = katz_deli.shift
+	if item == nil
+	  puts 
   puts "Currently serving " + item + "."
 end
 
