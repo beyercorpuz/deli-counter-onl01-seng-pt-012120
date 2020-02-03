@@ -1,32 +1,38 @@
+
+
 # Write your code here.
 def line(deli_line)
-  if deli_line == []
+  if deli_line.empty?
      puts "The line is currently empty."
-   else  
-     counter = 0
-     phrase = "The line is currently: "
-      while counter < deli_line.length
-      phrase += "#{counter +1}. #{deli_line[0]} "
-      counter += 1
-      end
-    puts phrase
-    end
+  
+  else  
+     text = "The line is currently: "
+     deli_line.each_with_index { |item, index|
+    	 text += (index + 1).to_s + '. ' + item + ' '
+     }
+     puts text.strip!
+
+ end
 end
 
-  def take_a_number(deli, name)
-    puts "The name of the person is #{name}"
-  end
-    
-    def now_servicing(name)
-      puts " The next person in line is #{name}"
-      name.shift
-    end
+#Accept two arguments
+  def take_a_number(katz_deli, new_name) 
+        katz_deli.push(new_name)
+	message = "Welcome, " + new_name + ". You are number " + katz_deli.count.to_s + " in line."
+	puts message
+	
+end      
       
-     # if #{name} < 1 
-   #   puts " There is nobody waiting to be served!"
- #
  
-  
+ 
+def now_serving(katz_deli) 
+	item = katz_deli.shift
+	if item == nil
+	  puts "There is nobody waiting to be served!"
+	else
+    puts "Currently serving " + item + "."
+  end
+end
 
 
   
