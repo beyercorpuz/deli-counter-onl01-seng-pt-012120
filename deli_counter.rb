@@ -10,7 +10,7 @@ def line(deli_line)
      deli_line.each_with_index { |item, index|
     	 text += (index + 1).to_s + '. ' + item + ' '
      }
-     puts text
+     puts text.strip!
 
  end
 end
