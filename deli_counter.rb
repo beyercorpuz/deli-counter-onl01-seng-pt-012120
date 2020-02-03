@@ -16,25 +16,12 @@ def line(deli_line)
 end
 
 #Accept two arguments
-  def take_a_number(deli, name)
-  deli << name 
-    puts "Welcome, #{name}. You are number #{deli.length} in line."
-  end
-    
-    def now_serving(names)
-      puts "The first person in line"
-      names.shift
-      
-      if names.empty?
-    puts " There is nobody waiting to be served!"
-  #else 
-    puts "The first person in line is str[0]."
-   
-
-
-    end
-  end
-      
+  def take_a_number(katz_deli, new_name) 
+        katz_deli.push(new_name)
+	message = "Welcome " + new_name + ". You are number " + katz_deli.count.to_s + " in line."
+	puts message
+	
+end      
       
  
  
