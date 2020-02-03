@@ -28,8 +28,10 @@ end
 def now_serving(katz_deli) 
 	item = katz_deli.shift
 	if item == nil
-	  puts 
-  puts "Currently serving " + item + "."
+	  puts "The line is currently empty."
+	else
+    puts "Currently serving " + item + "."
+  end
 end
 
 
