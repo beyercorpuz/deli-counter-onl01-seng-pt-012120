@@ -6,18 +6,14 @@ def line(deli_line)
      puts "The line is currently empty."
   
   else  
-     
-     phrase = "The line is currently:"
-   deli_line.each.with_index do |person,i|
-     phrase << " #{i+1}. #{person}"
-   
-   end
-  puts phrase
-   end
-   
-      
-    
-  end
+     text = "The line is currently: "
+     deli_line.each_with_index { |item, index|
+    	 text += (index + 1).to_s + '. ' + item + ' '
+     }
+     puts text
+
+ end
+end
 
 #Accept two arguments
   def take_a_number(deli, name)
