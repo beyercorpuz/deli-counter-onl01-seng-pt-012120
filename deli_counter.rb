@@ -18,7 +18,7 @@ end
 #Accept two arguments
   def take_a_number(katz_deli, new_name) 
         katz_deli.push(new_name)
-	message = "Welcome, " + new_name + ". You are number " + katz_deli.count.to_s + " in Line."
+	message = "Welcome, " + new_name + ". You are number " + katz_deli.count.to_s + " in line."
 	puts message
 	
 end      
